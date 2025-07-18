@@ -89,6 +89,28 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .webtoon-nav {
+    @apply text-sm font-semibold text-webtoon-text hover:text-webtoon-green transition-colors;
+  }
+
+  .webtoon-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .webtoon-badge {
+    @apply px-2 py-1 text-xs font-bold rounded;
+  }
+
+  .webtoon-badge-new {
+    @apply bg-webtoon-green text-white;
+  }
+
+  .webtoon-badge-up {
+    @apply bg-blue-500 text-white;
   }
 }
